@@ -1,0 +1,41 @@
+.column 
+  float left
+  margin 10px
+  figure 
+    border 2px solid #eee
+    border-radius 5px
+    cursor pointer
+    padding 15px
+    transition ease-in all .3s
+    &:hover
+      border 2px solid lightblue
+  h1, h2, h3, h4, h5, h6
+    margin-top 20px
+    margin-bottom 20px
+
+.greydiv 
+  background #eee
+
+#grid[data-columns]::before
+	content: '3 .column.size-1of3';
+
+h1, h2, h3, h4, h5, h6
+  font-family 'Playfair Display'
+  font-weight bold
+
+.navbar
+  min-height 60px
+  margin-bottom 20px
+
+p
+  font-family 'Fauna One'
+
+.size-1of3 
+  width: 31.333%
+
+@media screen and (max-width: 600px)
+  #grid[data-columns]::before
+    content: '1 .column.size-1of1'
+
+  .size-1of3 
+    width: 100%

@@ -1,0 +1,68 @@
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Fauna+One:400,700|Playfair+Display:400,700")
+  link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
+  link(rel="stylesheet", href="style.css", type="text/css")
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
+  title Powerslacker Blog
+body
+  nav.navbar.navbar-fixed-top.navbar-toggleable-md.navbar-light.bg-faded
+    button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    a.navbar-brand(href="#")
+    .collapse.navbar-collapse#navbarNavAltMarkup
+      .navbar-nav
+        a.nav-item.nav-link.active(href="#") Home
+        a.nav-item.nav-link(href="#") Category 1
+        a.nav-item.nav-link(href="#") Category 2
+        a.nav-item.nav-link(href="#") Category 3
+  // blog title
+  .row
+    .container
+      h1.text-center Powerslacker
+      p.text-center Programming Tips, Tricks, Rants &amp; MORE!
+      hr
+  // most recent blog posts
+  .row
+    .container
+      #grid(data-columns)
+        figure
+          img.img-fluid(src="cat1.jpg", alt="")
+          h4 hi dere
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+        figure
+          img.img-fluid(src="cat2.jpg", alt="")
+          h4 i am cet
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+        figure
+          img.img-fluid(src="cat3.jpg", alt="")
+          h4 i can haz cheezburger?
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+        figure
+          img.img-fluid(src="cat1.jpg", alt="")
+          h4 hi dere
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+        figure
+          img.img-fluid(src="cat2.jpg", alt="")
+          h4 i am cet
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+        figure
+          img.img-fluid(src="cat3.jpg", alt="")
+          h4 i can haz cheezburger?
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...
+  // end of page scripts
+  script(src='salvattore.min.js')
+      
+      
+  
+
